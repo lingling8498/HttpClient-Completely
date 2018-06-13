@@ -23,7 +23,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              {
+                "input": "src/styles.css"
+              },
+              {
+                "input": "src/test.css"
+              }
             ],
             "scripts": []
           },

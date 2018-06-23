@@ -1,28 +1,24 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule }                from '@angular/platform-browser';
+import { ReactiveFormsModule }          from '@angular/forms';
+import { NgModule }                     from '@angular/core';
 
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { HttpClientXsrfModule } from '@angular/common/http';
+import { AppComponent }                 from './app.component';
 
-import { AppComponent } from './app.component';
+
 import { ConfigComponent } from './config/config.component';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
-
+import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-form-question.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConfigComponent,
-    DynamicFormComponent
+    DynamicFormComponent,
+    DynamicFormQuestionComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    FormsModule,
-    HttpClientModule,
-    HttpClientXsrfModule
   ],
   providers: [],
   bootstrap: [AppComponent]
